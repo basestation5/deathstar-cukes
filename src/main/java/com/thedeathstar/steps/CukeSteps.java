@@ -1,5 +1,7 @@
 package com.thedeathstar.steps;
 
+import com.thedeathstar.api.RestClient;
+import com.thedeathstar.model.DeathStars;
 import cucumber.api.java.en.Given;
 import cucumber.api.java.en.When;
 import cucumber.api.java.en.And;
@@ -18,34 +20,22 @@ import cucumber.api.java.en.Then;
 
 public class CukeSteps {
 
+    @Given("There are two deathstars in the Galaxy")
+    public void ExecuteGiven() {
+
+    }
+    @When("I call the Deathstar Service")
+    public void ExecuteWhen() {
+
+        RestClient client = new RestClient();
+
+        String deathstars = client.GetDeathStars();
+
+    }
     @Then("I should get two deathstars")
     public void ExecuteThen() {
 
     }
 
-    @And("I want both deathstars")
-    public void ExecuteAnd() {
-
-    }
-
-    @And("Get a Deathstar")
-    public void ExecuteAnd2() {
-
-    }
-
-    @And("Get a single Deathstar")
-    public void ExecuteAnd3() {
-
-    }
-
-    @When("I call the Deathstar Service")
-    public void ExecuteWhen() {
-
-    }
-
-    @Given("There are two deathstars in the Galaxy")
-    public void ExecuteGiven() {
-
-    }
 
 }

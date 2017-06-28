@@ -11,14 +11,14 @@ public class RestClient {
 
     //private static final RestTemplate restTemplate;
 
-    public DeathStars GetDeathStars()
+    public String GetDeathStars()
     {
         String url = "https://deathstar-service.cfapps.io/deathstars";
         String result;
-        DeathStars deathStars;
+        String deathStars;
 
         RestTemplate restTemplate = new RestTemplate();
-        deathStars = restTemplate.getForObject("http://gturnquist-quoters.cfapps.io/api/random", DeathStars.class);
+        deathStars = restTemplate.getForObject(url, String.class);
 
         return deathStars;
     }
