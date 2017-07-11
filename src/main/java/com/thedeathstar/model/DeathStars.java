@@ -3,11 +3,11 @@ package com.thedeathstar.model;
 import java.util.List;
 
 /**
- * Created by Jeremy on 6/16/17.
+ * Created by Jeremy on 7/10/17.
  */
 public class DeathStars {
 
-    public List<DeathStar> getDeathstars() {
+    public List<DeathStar> getDeathStars() {
         return deathStars;
     }
 
@@ -16,4 +16,6 @@ public class DeathStars {
     }
 
     private List<DeathStar> deathStars;
+
+
 }

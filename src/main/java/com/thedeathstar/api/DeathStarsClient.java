@@ -13,8 +13,7 @@ public class RestClient {
 
     public String GetDeathStars()
     {
-        String url = "https://deathstar-service.cfapps.io/deathstars";
-        String result;
+        String url = "http://deathstar-service.cfapps.io/deathstars";
         String deathStars;
 
         RestTemplate restTemplate = new RestTemplate();
